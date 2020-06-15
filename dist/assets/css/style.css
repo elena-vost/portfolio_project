@@ -1503,6 +1503,13 @@ body {
     justify-content: center;
 }
 
+.content__title {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121212;
+}
+
 .intro__text {
     font-size: 1.2rem;
     color: #605f5f;
@@ -1750,4 +1757,11 @@ body {
     line-height: 1.2;
     color: #121212;
     font-weight: 500;
+}
+
+.services__item {
+    padding: 1.2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
 }
