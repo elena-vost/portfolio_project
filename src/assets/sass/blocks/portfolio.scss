@@ -2,6 +2,37 @@
     position: relative;
 }
 
+.portfolio__slider {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background: $white
+        url("../img/ajax-loader.gif")center no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &.slick-initialized {
+        overflow: visible;
+
+        &:after {
+            display: none;
+        }
+    }
+
+}
+
+
 .portfolio__item {
     max-width: 54opx;
     background-color: #000;

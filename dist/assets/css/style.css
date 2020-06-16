@@ -1799,6 +1799,32 @@ body {
     position: relative;
 }
 
+.portfolio__slider {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+
+.portfolio__slider:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff url("../img/ajax-loader.gif") center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.portfolio__slider.slick-initialized {
+    overflow: visible;
+}
+
+.portfolio__slider.slick-initialized:after {
+    display: none;
+}
+
 .portfolio__item {
     max-width: 54opx;
     background-color: #000;
