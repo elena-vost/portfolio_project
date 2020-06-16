@@ -62,18 +62,22 @@
 
     transform: translateY(-50%);
 
-     &:hover {
+    &:hover {
         .portfolio__arrow-icon {
             fill: $pink;
         }
     }
 
+    &:focus {
+        outline: 0;
+    }
+
     &--prev {
-        left: -1rem;
+        left: -2rem;
     }
 
     &--next {
-        right: -1rem;
+        right: -2rem;
     }
 
 
