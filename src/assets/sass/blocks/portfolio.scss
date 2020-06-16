@@ -1,4 +1,6 @@
-
+.portfolio {
+    position: relative;
+}
 
 .portfolio__item {
     max-width: 54opx;
@@ -47,5 +49,41 @@
     transition: transform .2s linear;
 }
 
+.portfolio__arrow {
+    padding: 0;
 
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    transform: translateY(-50%);
+
+     &:hover {
+        .portfolio__arrow-icon {
+            fill: $pink;
+        }
+    }
+
+    &--prev {
+        left: -1rem;
+    }
+
+    &--next {
+        right: -1rem;
+    }
+
+
+}
+
+.portfolio__arrow-icon {
+    width: 20px;
+    height: 30px;
+
+    fill: #c5c5c5;
+    transition: fill .1s linear;
+}
 

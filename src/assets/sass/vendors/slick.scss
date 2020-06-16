@@ -65,6 +65,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    padding: 0 1rem;
     [dir="rtl"] & {
         float: right;
     }
@@ -97,4 +98,11 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
 }
