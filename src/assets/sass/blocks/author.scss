@@ -4,5 +4,13 @@
     bottom: 5rem;
     z-index: 2;
 
- //   border-radius: 47% 53% 49% 51% / 47% 46% 54% 53%;
+    @media (max-width: 1330px) {
+        right: 0;
+
+    }
+    @media (max-width: 575px) {
+        display: none;
+
+    }
+
 }

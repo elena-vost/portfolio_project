@@ -6,21 +6,21 @@
     box-shadow: 0 5px 25px rgba(0, 0, 0, .15);
     border-radius: 19% 81% 53% 47% / 78% 30% 70% 22%;
 
-    //animation: circleRadius 5s alternate;
 
     position: absolute;
     right: 5rem;
     bottom: 8rem;
     z-index: 1;
 
+    @media (max-width: 1330px) {
+        right: 2rem;
+
+    }
+     @media (max-width: 575px) {
+        display: none;
+
+    }
+
 }
 
 
-//@keyframes circleRadius {
-    //0% {
-      //  border-radius:19% 81% 53% 47% / 78% 30% 70% 22%;
-    //}
-   // 100% {
- //       border-radius: 26% 74% 36% 64% / 37% 46% 54% 63%;
-  //  }
-//}
